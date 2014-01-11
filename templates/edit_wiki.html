@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			POST!!
+		</title>
+		<style>
+		button > a:link{color:black;}
+		button > a:visited {color:black;}
+		button > a {text-decoration: none;}
+		</style>	
+	</head>
+
+	<body>
+	<div>
+	{% if logged == "logged" %}
+	Hello, {{username}}!!
+	<button><a href="/{{wikipath}}">Back</a></button>
+	<button><a href="/logout">Logout</a></button>
+	{% else %}
+	<button><a href="/login">Login</a></button>
+	{% endif %}
+	<h1>{{wikipath}}</h1>
+	</div>
+
+		<form method= "post">
+
+			<textarea name = "content">{{content}}</textarea>
+			<input type = "submit">
+			
+		</form>
+
+
+
+	</body>
+</html>

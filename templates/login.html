@@ -1,0 +1,22 @@
+<html>
+<head>
+<style>
+button > a:link{color:black;}
+button > a:visited {color:black;}
+</style>
+</head>
+<body>
+<h2>Login to contribute!!!</h2>
+<form method="POST">
+	Username:
+    <input type="text" name="username" value={{username}}>
+    <br>
+    Password:
+    <input type="password" name="password">
+    <br>
+    <input type="submit">
+    <div style="color:red">{{login_error}}</div>
+</form>
+<div><button><a href="/signup" style="text-decoration:none">Signup</a></button></div>
+</body>
+</html>

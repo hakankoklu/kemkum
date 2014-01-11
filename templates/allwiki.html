@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Some Page!!
+		</title>
+		<style>
+		button > a:link{color:black;}
+		button > a:visited {color:black;}
+		button > a {text-decoration: none;}
+		</style>	
+	</head>
+	<body>
+	{% for wiki in wikis %}
+	<div>{{wiki.wikipath}}</div>
+	{% endfor %}
+	</body>
+</html>
